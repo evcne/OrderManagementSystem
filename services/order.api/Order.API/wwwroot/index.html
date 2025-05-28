@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Order Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+</head>
+<body>
+    <h2>Yeni Sipariş Bildirimi</h2>
+    <ul id="orders"></ul>
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/orderHub")
+            .build();
+
+        connection.on("OrderCreated", function(order) {
+            const li = document.createElement("li");
+            li.textContent = `Sipariş alındı: ${order.id} - ${order.description}`;
+            document.getElementById("orders").appendChild(li);
+        });
+
+        connection.start().catch(function (err) {
+            return console.error(err.toString());
+        });
+
+
+    </script>
+</body>
+</html>

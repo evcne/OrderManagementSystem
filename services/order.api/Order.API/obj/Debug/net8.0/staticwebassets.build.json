@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "Tq3zIwSgUJ56V08E7t9jUZg54rUuCcpqMNC6m4YirpQ=",
+  "Hash": "0ZJs1+9/H0UgT9hI5qRN1BpOjP33Tyq746P6+XzTtCA=",
   "Source": "Order.API",
   "BasePath": "_content/Order.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Order.API\\wwwroot",
+      "Source": "Order.API",
+      "ContentRoot": "C:\\xampp\\htdocs\\OrderManagementSystem\\services\\order.api\\Order.API\\wwwroot\\",
+      "BasePath": "_content/Order.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\xampp\\htdocs\\OrderManagementSystem\\services\\order.api\\Order.API\\wwwroot\\index.html",
+      "SourceId": "Order.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp\\htdocs\\OrderManagementSystem\\services\\order.api\\Order.API\\wwwroot\\",
+      "BasePath": "_content/Order.API",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }
